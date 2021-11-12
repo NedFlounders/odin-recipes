@@ -21,37 +21,53 @@ ol {
 
 
 .header {
+    display: flex;
+    flex-shrink: 1;
     font-size:72px;
-    color: rgb(51, 33, 0);
-    text-align: center;
-    font-family: "Sigmar One", cursive,'Times New Roman', Times, serif;
-    background-color: rgb(255, 200, 49);
+    max-width: 600px;
+    color: rgb(51, 33, 0); 
+    background-color: rgb(255,200,49);   
+    font-family: "Sigmar One", cursive,'Times New Roman', Times, serif;    
+}
+
+.header-box {
+    display: flex;
+    background-color: rgb(255,200,49);
     border: 2px solid black;
+    height: 130px;
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .link {
     font-size: 22px;
-    display: inline-block;
-    width: 190px;
-    height: 25px;
+    width: 170px;
+    height: 30px;
     background:#494949;
-    padding:10px;
+    padding:8px;
     border-radius: 10px;
     border: 2px solid black;
     color: white;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 30px;
     text-align: center;
     font-family: 'Mochiy Pop P One', sans-serif;
     text-decoration: none;
 }
 
 .link-bar {
-    max-width: auto;
-    margin: auto;
+    display: flex;
     padding: 10px;
+    height: 60px;
     background-color: slategray;
     border: 2px solid black;
+    flex: 1 1 0;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 .center {
